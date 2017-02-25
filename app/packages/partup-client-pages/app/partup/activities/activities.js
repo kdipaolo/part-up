@@ -29,7 +29,7 @@ Template.app_partup_activities.onCreated(function() {
 
                     return true;
                 })
-                .sort(Partup.client.sort.dateASC.bind(null, 'created_at'))
+                .sort(Partup.client.sort.dateDESC.bind(null, 'created_at'))
                 .sort(Partup.client.sort.dateASC.bind(null, 'end_date'));
 
             return activities;
